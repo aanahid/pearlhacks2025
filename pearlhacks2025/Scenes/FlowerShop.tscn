@@ -1,14 +1,12 @@
-[gd_scene load_steps=35 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=28 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
+[ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
 [ext_resource type="PackedScene" uid="uid://ctaoqelvopml2" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinet.glb" id="2_0jwsh"]
-[ext_resource type="Script" path="res://Scenes/Scripts/character.gd" id="2_ajvkc"]
 [ext_resource type="PackedScene" uid="uid://ddjpchxq3rx68" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinetDrawer.glb" id="3_adc3s"]
 [ext_resource type="PackedScene" uid="uid://c6wfcixgbtcst" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinetCornerInner.glb" id="4_218ug"]
 [ext_resource type="PackedScene" uid="uid://dpqnfas2h6fad" path="res://Models/LowPoly Farm Kit/WateringCan_01.fbx" id="5_f8pvu"]
 [ext_resource type="PackedScene" uid="uid://dw4woq2jss6jc" path="res://Models/LowPoly Farm Kit/Terrain_01.fbx" id="6_1ktkn"]
-[ext_resource type="PackedScene" uid="uid://begonuxdihrr6" path="res://Models/LowPoly Farm Kit/Box_01.fbx" id="7_1i3g4"]
-[ext_resource type="PackedScene" uid="uid://ck73det1825vp" path="res://Models/Mini Characters Kit/Models/GLB format/character-female-b.glb" id="8_p2sbn"]
 [ext_resource type="PackedScene" uid="uid://dgp6uegah0y5u" path="res://Models/Furniture Kit/Models/GLTF format/cardboardBoxClosed.glb" id="9_i48r6"]
 [ext_resource type="PackedScene" uid="uid://cjq5leoah81km" path="res://Models/Furniture Kit/Models/GLTF format/rugRound.glb" id="10_igwif"]
 [ext_resource type="PackedScene" uid="uid://1ybbqtsk5whs" path="res://Models/Furniture Kit/Models/GLTF format/trashcan.glb" id="11_c5e16"]
@@ -25,31 +23,17 @@
 [ext_resource type="PackedScene" uid="uid://dw60vsfetlhw4" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_10.tscn" id="22_6423d"]
 [ext_resource type="PackedScene" uid="uid://c432iwc30ngce" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_8.tscn" id="23_acrl5"]
 [ext_resource type="PackedScene" uid="uid://be4caj44mvwwl" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_3.tscn" id="24_oftdl"]
-[ext_resource type="PackedScene" uid="uid://csdf5rgmg1erp" path="res://Models/LowPoly Farm Kit/Mud_01.fbx" id="25_khoy7"]
-[ext_resource type="PackedScene" uid="uid://dt5t5flgf3ncd" path="res://Models/LowPoly Farm Kit/Grass_02.fbx" id="26_pm1li"]
-[ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="27_v0aeh"]
-[ext_resource type="PackedScene" uid="uid://beg4q7hraxxcj" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_dahlia_a_1.tscn" id="28_wkfpt"]
-[ext_resource type="PackedScene" uid="uid://b0y717fmpv81t" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_rose_a_1.tscn" id="29_jyq3e"]
-[ext_resource type="PackedScene" uid="uid://cnb8fykjx6lbc" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_freesia_a_2.tscn" id="30_tjcjq"]
+[ext_resource type="PackedScene" uid="uid://dqulkuturmues" path="res://Scenes/FlowerPlot.tscn" id="25_13tlt"]
+[ext_resource type="PackedScene" uid="uid://3f4p4vhwmq56" path="res://Models/Furniture Kit/Models/GLTF format/rugSquare.glb" id="26_10gll"]
 [ext_resource type="PackedScene" uid="uid://dej1l1qitghyw" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/foam_3.tscn" id="31_oa54r"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_r6e54"]
-size = Vector3(0.66626, 1.19836, 0.25705)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
 size = Vector3(3.709, 1, 0.492)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.708161, 0.0715836, -0.255362)
-script = ExtResource("2_ajvkc")
-
-[node name="character-female-b2" parent="CharacterBody3D" instance=ExtResource("8_p2sbn")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0286865, 0.0991821, -0.0063324)
-shape = SubResource("BoxShape3D_r6e54")
+[node name="Player" parent="." instance=ExtResource("1_ul03u")]
+transform = Transform3D(-0.0734993, 0, 0.997295, 0, 1, 0, -0.997295, 0, -0.0734993, 0.614194, 0.0803764, -0.535128)
 
 [node name="floorFull" parent="." instance=ExtResource("1_g4bxs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
@@ -116,10 +100,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
 [node name="kitchenCabinetDrawer3" parent="counterRow" instance=ExtResource("3_adc3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="counterRow"]
-gravity_scale = 0.0
+[node name="StaticBody3D" type="StaticBody3D" parent="counterRow"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
 shape = SubResource("BoxShape3D_g6tx1")
 
@@ -142,10 +125,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
 [node name="kitchenCabinetDrawer3" parent="counterRow2" instance=ExtResource("3_adc3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="counterRow2"]
-gravity_scale = 0.0
+[node name="StaticBody3D" type="StaticBody3D" parent="counterRow2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow2/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow2/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
 shape = SubResource("BoxShape3D_g6tx1")
 
@@ -167,10 +149,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
 [node name="kitchenCabinetDrawer3" parent="counterRow3" instance=ExtResource("3_adc3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="counterRow3"]
-gravity_scale = 0.0
+[node name="StaticBody3D" type="StaticBody3D" parent="counterRow3"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow3/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow3/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
 shape = SubResource("BoxShape3D_g6tx1")
 
@@ -192,10 +173,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
 [node name="kitchenCabinetDrawer3" parent="counterRow4" instance=ExtResource("3_adc3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="counterRow4"]
-gravity_scale = 0.0
+[node name="StaticBody3D" type="StaticBody3D" parent="counterRow4"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow4/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow4/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
 shape = SubResource("BoxShape3D_g6tx1")
 
@@ -216,12 +196,6 @@ transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1.63465, 0.566996, -0.5
 
 [node name="Terrain_01" parent="." instance=ExtResource("6_1ktkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77992, 0, 1.14587)
-
-[node name="Box_01" parent="." instance=ExtResource("7_1i3g4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.589655, 0, 0.774618)
-
-[node name="Box_02" parent="." instance=ExtResource("7_1i3g4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.328761, 2.38419e-07, -0.259599)
 
 [node name="cardboardBoxClosed" parent="." instance=ExtResource("9_i48r6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.702293, 0.441398, 1.79991)
@@ -280,46 +254,6 @@ transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128
 [node name="cardboardBoxClosed4" parent="." instance=ExtResource("9_i48r6")]
 transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128, 1.74947, 0.41903, 0.103294)
 
-[node name="Mud_01" parent="." instance=ExtResource("25_khoy7")]
-transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, 0.580266, 0.209436, 0.769437)
-
-[node name="Mud_02" parent="." instance=ExtResource("25_khoy7")]
-transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, -0.323314, 0.209436, -0.270239)
-
-[node name="Grass_02" parent="." instance=ExtResource("26_pm1li")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.565316, 0, 0.842035)
-
-[node name="Grass_03" parent="." instance=ExtResource("26_pm1li")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34807, 0, -0.22875)
-
-[node name="Node" type="Node" parent="."]
-
-[node name="Flower_Carnation_A_1" parent="Node" instance=ExtResource("27_v0aeh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.612478, 0.213635, 0.767812)
-
-[node name="Flower_Dahlia_A_1" parent="Node" instance=ExtResource("28_wkfpt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.610766, 0.178568, 0.76645)
-
-[node name="Flower_Rose_A_1" parent="Node" instance=ExtResource("29_jyq3e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.589532, 0.245088, 0.777148)
-
-[node name="Flower_Freesia_A_2" parent="Node" instance=ExtResource("30_tjcjq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.655662, 0.38938, 0.763757)
-
-[node name="Node2" type="Node" parent="."]
-
-[node name="Flower_Carnation_A_1" parent="Node2" instance=ExtResource("27_v0aeh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.318673, 0.213635, -0.284588)
-
-[node name="Flower_Dahlia_A_1" parent="Node2" instance=ExtResource("28_wkfpt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.320385, 0.178568, -0.28595)
-
-[node name="Flower_Rose_A_1" parent="Node2" instance=ExtResource("29_jyq3e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.341619, 0.245088, -0.275252)
-
-[node name="Flower_Freesia_A_2" parent="Node2" instance=ExtResource("30_tjcjq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.275489, 0.38938, -0.288643)
-
 [node name="Foam_3" parent="." instance=ExtResource("31_oa54r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0744272, 0.437285, 1.68776)
 
@@ -333,3 +267,9 @@ light_energy = 1.005
 light_indirect_energy = 1.324
 light_volumetric_fog_energy = 1.646
 light_angular_distance = 11.82
+
+[node name="FlowerPlot" parent="." instance=ExtResource("25_13tlt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.332864, 0, 0.241643)
+
+[node name="rugSquare" parent="." instance=ExtResource("26_10gll")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.411131, 0.421938, -1.08466)

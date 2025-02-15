@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3 uid="uid://dqulkuturmues"]
+
+[ext_resource type="PackedScene" uid="uid://begonuxdihrr6" path="res://Models/LowPoly Farm Kit/Box_01.fbx" id="1_uh1wv"]
+[ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="2_n37x4"]
+[ext_resource type="PackedScene" uid="uid://csdf5rgmg1erp" path="res://Models/LowPoly Farm Kit/Mud_01.fbx" id="2_n567n"]
+[ext_resource type="PackedScene" uid="uid://dt5t5flgf3ncd" path="res://Models/LowPoly Farm Kit/Grass_02.fbx" id="3_040li"]
+[ext_resource type="PackedScene" uid="uid://beg4q7hraxxcj" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_dahlia_a_1.tscn" id="3_k00qt"]
+[ext_resource type="PackedScene" uid="uid://b0y717fmpv81t" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_rose_a_1.tscn" id="4_tas46"]
+[ext_resource type="PackedScene" uid="uid://cnb8fykjx6lbc" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_freesia_a_2.tscn" id="5_vr6g1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ustc"]
+size = Vector3(0.557632, 0.750977, 0.391724)
+
+[node name="FlowerPlot" type="Node3D"]
+
+[node name="Box_01" parent="." instance=ExtResource("1_uh1wv")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box_01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box_01/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00626373, 0.124512, -0.013184)
+shape = SubResource("BoxShape3D_0ustc")
+
+[node name="Mud_02" parent="." instance=ExtResource("2_n567n")]
+transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, 0, 0.209527, 0)
+
+[node name="Grass_02" parent="." instance=ExtResource("3_040li")]
+
+[node name="Flower_Carnation_A_1" parent="." instance=ExtResource("2_n37x4")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+
+[node name="Flower_Dahlia_A_1" parent="." instance=ExtResource("3_k00qt")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+
+[node name="Flower_Rose_A_1" parent="." instance=ExtResource("4_tas46")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+
+[node name="Flower_Freesia_A_2" parent="." instance=ExtResource("5_vr6g1")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
