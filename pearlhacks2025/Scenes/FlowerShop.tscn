@@ -1,0 +1,335 @@
+[gd_scene load_steps=35 format=3 uid="uid://j2ge02w5rb82"]
+
+[ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
+[ext_resource type="PackedScene" uid="uid://ctaoqelvopml2" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinet.glb" id="2_0jwsh"]
+[ext_resource type="Script" path="res://Scenes/Scripts/character.gd" id="2_ajvkc"]
+[ext_resource type="PackedScene" uid="uid://ddjpchxq3rx68" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinetDrawer.glb" id="3_adc3s"]
+[ext_resource type="PackedScene" uid="uid://c6wfcixgbtcst" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinetCornerInner.glb" id="4_218ug"]
+[ext_resource type="PackedScene" uid="uid://dpqnfas2h6fad" path="res://Models/LowPoly Farm Kit/WateringCan_01.fbx" id="5_f8pvu"]
+[ext_resource type="PackedScene" uid="uid://dw4woq2jss6jc" path="res://Models/LowPoly Farm Kit/Terrain_01.fbx" id="6_1ktkn"]
+[ext_resource type="PackedScene" uid="uid://begonuxdihrr6" path="res://Models/LowPoly Farm Kit/Box_01.fbx" id="7_1i3g4"]
+[ext_resource type="PackedScene" uid="uid://ck73det1825vp" path="res://Models/Mini Characters Kit/Models/GLB format/character-female-b.glb" id="8_p2sbn"]
+[ext_resource type="PackedScene" uid="uid://dgp6uegah0y5u" path="res://Models/Furniture Kit/Models/GLTF format/cardboardBoxClosed.glb" id="9_i48r6"]
+[ext_resource type="PackedScene" uid="uid://cjq5leoah81km" path="res://Models/Furniture Kit/Models/GLTF format/rugRound.glb" id="10_igwif"]
+[ext_resource type="PackedScene" uid="uid://1ybbqtsk5whs" path="res://Models/Furniture Kit/Models/GLTF format/trashcan.glb" id="11_c5e16"]
+[ext_resource type="PackedScene" uid="uid://uhwoohl41oru" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/containers_1.tscn" id="11_d7j8t"]
+[ext_resource type="PackedScene" uid="uid://y0uqqu28p8y5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_1.tscn" id="13_agwy6"]
+[ext_resource type="PackedScene" uid="uid://cdki2nq5id872" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/containers_2.tscn" id="14_muj2q"]
+[ext_resource type="PackedScene" uid="uid://cr0nn3jv8onaw" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/containers_3.tscn" id="15_cm8w8"]
+[ext_resource type="PackedScene" uid="uid://vvtibiecuusw" path="res://Models/Furniture Kit/Models/GLTF format/kitchenSink.glb" id="16_v8ljy"]
+[ext_resource type="PackedScene" uid="uid://c3xey3m7uu01a" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_4.tscn" id="17_aoa0o"]
+[ext_resource type="PackedScene" uid="uid://dy4y3h4qkq3ko" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_5.tscn" id="18_a4fnf"]
+[ext_resource type="PackedScene" uid="uid://bve22cjnprlrx" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_6.tscn" id="19_hx0w2"]
+[ext_resource type="PackedScene" uid="uid://tp0rtjuuc2is" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_7.tscn" id="20_g4aj4"]
+[ext_resource type="PackedScene" uid="uid://pe0l0gximxdk" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_9.tscn" id="21_g7r2o"]
+[ext_resource type="PackedScene" uid="uid://dw60vsfetlhw4" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_10.tscn" id="22_6423d"]
+[ext_resource type="PackedScene" uid="uid://c432iwc30ngce" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_8.tscn" id="23_acrl5"]
+[ext_resource type="PackedScene" uid="uid://be4caj44mvwwl" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_3.tscn" id="24_oftdl"]
+[ext_resource type="PackedScene" uid="uid://csdf5rgmg1erp" path="res://Models/LowPoly Farm Kit/Mud_01.fbx" id="25_khoy7"]
+[ext_resource type="PackedScene" uid="uid://dt5t5flgf3ncd" path="res://Models/LowPoly Farm Kit/Grass_02.fbx" id="26_pm1li"]
+[ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="27_v0aeh"]
+[ext_resource type="PackedScene" uid="uid://beg4q7hraxxcj" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_dahlia_a_1.tscn" id="28_wkfpt"]
+[ext_resource type="PackedScene" uid="uid://b0y717fmpv81t" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_rose_a_1.tscn" id="29_jyq3e"]
+[ext_resource type="PackedScene" uid="uid://cnb8fykjx6lbc" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_freesia_a_2.tscn" id="30_tjcjq"]
+[ext_resource type="PackedScene" uid="uid://dej1l1qitghyw" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/foam_3.tscn" id="31_oa54r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r6e54"]
+size = Vector3(0.66626, 1.19836, 0.25705)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
+size = Vector3(3.709, 1, 0.492)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.708161, 0.0715836, -0.255362)
+script = ExtResource("2_ajvkc")
+
+[node name="character-female-b2" parent="CharacterBody3D" instance=ExtResource("8_p2sbn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0286865, 0.0991821, -0.0063324)
+shape = SubResource("BoxShape3D_r6e54")
+
+[node name="floorFull" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+
+[node name="floorFull2" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="floorFull3" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+
+[node name="floorFull4" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="floorFull5" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="floorFull6" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="floorFull7" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="floorFull8" parent="." instance=ExtResource("1_g4bxs")]
+
+[node name="floorFull9" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="floorFull10" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="floorFull11" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
+
+[node name="floorFull12" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="floorFull13" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+
+[node name="floorFull14" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+
+[node name="floorFull15" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="floorFull16" parent="." instance=ExtResource("1_g4bxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="counterRow" parent="." instance=ExtResource("2_0jwsh")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.44447, 0, 1.5378)
+
+[node name="kitchenCabinetDrawer2" parent="counterRow" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428736, 0, 0)
+
+[node name="kitchenCabinet" parent="counterRow" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857799, 0, -0.000107884)
+
+[node name="kitchenCabinetDrawer" parent="counterRow" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
+
+[node name="kitchenCabinet2" parent="counterRow" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
+
+[node name="kitchenCabinetDrawer3" parent="counterRow" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="counterRow"]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
+shape = SubResource("BoxShape3D_g6tx1")
+
+[node name="counterRow2" parent="." instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1241, 0, -1.04056)
+
+[node name="kitchenCabinetDrawer2" parent="counterRow2" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428736, 0, 0)
+
+[node name="kitchenCabinet" parent="counterRow2" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857799, 0, -0.000107884)
+visible = false
+
+[node name="kitchenCabinetDrawer" parent="counterRow2" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
+
+[node name="kitchenCabinet2" parent="counterRow2" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
+
+[node name="kitchenCabinetDrawer3" parent="counterRow2" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="counterRow2"]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow2/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
+shape = SubResource("BoxShape3D_g6tx1")
+
+[node name="counterRow3" parent="." instance=ExtResource("2_0jwsh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.1244, 0, 1.53831)
+
+[node name="kitchenCabinetDrawer2" parent="counterRow3" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428736, -2.38419e-07, 1.19209e-07)
+
+[node name="kitchenCabinet" parent="counterRow3" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857799, 0, -0.000107884)
+
+[node name="kitchenCabinetDrawer" parent="counterRow3" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
+
+[node name="kitchenCabinet2" parent="counterRow3" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
+
+[node name="kitchenCabinetDrawer3" parent="counterRow3" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="counterRow3"]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
+shape = SubResource("BoxShape3D_g6tx1")
+
+[node name="counterRow4" parent="." instance=ExtResource("2_0jwsh")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.45438, 3.57628e-07, -1.04557)
+
+[node name="kitchenCabinetDrawer2" parent="counterRow4" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428736, -2.38419e-07, 1.19209e-07)
+
+[node name="kitchenCabinet" parent="counterRow4" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857799, 0, -0.000107884)
+
+[node name="kitchenCabinetDrawer" parent="counterRow4" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
+
+[node name="kitchenCabinet2" parent="counterRow4" instance=ExtResource("2_0jwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
+
+[node name="kitchenCabinetDrawer3" parent="counterRow4" instance=ExtResource("3_adc3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="counterRow4"]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="counterRow4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
+shape = SubResource("BoxShape3D_g6tx1")
+
+[node name="kitchenCabinetCornerInner" parent="." instance=ExtResource("4_218ug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43991, -2.38419e-07, -1.02692)
+
+[node name="kitchenCabinetCornerInner2" parent="." instance=ExtResource("4_218ug")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.44477, 0, 1.52592)
+
+[node name="kitchenCabinetCornerInner3" parent="." instance=ExtResource("4_218ug")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.1107, 0, 1.52592)
+
+[node name="kitchenCabinetCornerInner4" parent="." instance=ExtResource("4_218ug")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -1.1107, 0, -1.03244)
+
+[node name="WateringCan_01" parent="." instance=ExtResource("5_f8pvu")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1.63465, 0.566996, -0.527599)
+
+[node name="Terrain_01" parent="." instance=ExtResource("6_1ktkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77992, 0, 1.14587)
+
+[node name="Box_01" parent="." instance=ExtResource("7_1i3g4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.589655, 0, 0.774618)
+
+[node name="Box_02" parent="." instance=ExtResource("7_1i3g4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.328761, 2.38419e-07, -0.259599)
+
+[node name="cardboardBoxClosed" parent="." instance=ExtResource("9_i48r6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.702293, 0.441398, 1.79991)
+
+[node name="cardboardBoxClosed2" parent="." instance=ExtResource("9_i48r6")]
+transform = Transform3D(0.993056, 0, 0.117641, 0, 1, 0, -0.117641, 0, 0.993056, 1.11741, 0.41903, 1.83211)
+
+[node name="rugRound" parent="." instance=ExtResource("10_igwif")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05129, 0.0538539, 1.44579)
+
+[node name="Containers_1" parent="." instance=ExtResource("11_d7j8t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.26775, 0.576697, 0.883043)
+
+[node name="trashcan" parent="." instance=ExtResource("11_c5e16")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.840416, 0, 1.34335)
+
+[node name="FlowerArrangement_1" parent="." instance=ExtResource("13_agwy6")]
+transform = Transform3D(-0.992099, 0, 0.125454, 0, 1, 0, -0.125454, 0, -0.992099, -0.35064, 0.411617, 1.8023)
+
+[node name="Containers_2" parent="." instance=ExtResource("14_muj2q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3247, 0.575481, 0.233285)
+
+[node name="Containers_3" parent="." instance=ExtResource("15_cm8w8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.26961, 0.531281, -0.524699)
+
+[node name="kitchenSink" parent="." instance=ExtResource("16_v8ljy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263094, 0.00357264, -1.03323)
+
+[node name="FlowerArrangement_5" parent="." instance=ExtResource("17_aoa0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69414, 0.431208, 1.77504)
+
+[node name="FlowerArrangement_6" parent="." instance=ExtResource("18_a4fnf")]
+transform = Transform3D(-0.042329, 0, 0.999104, 0, 1, 0, -0.999104, 0, -0.042329, -1.31059, 0.436749, 1.35118)
+
+[node name="FlowerArrangement_7" parent="." instance=ExtResource("19_hx0w2")]
+transform = Transform3D(0.282576, 0, 0.959245, 0, 1, 0, -0.959245, 0, 0.282576, -1.136, 0.434627, -1.34367)
+
+[node name="FlowerArrangement_8" parent="." instance=ExtResource("20_g4aj4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.78378, 0.43153, 1.61333)
+
+[node name="FlowerArrangement_10" parent="." instance=ExtResource("21_g7r2o")]
+transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411, -0.613145, 0.438545, -1.25803)
+
+[node name="FlowerArrangement_11" parent="." instance=ExtResource("22_6423d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72745, 0.447298, 1.26403)
+
+[node name="FlowerArrangement_12" parent="." instance=ExtResource("23_acrl5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17844, 0.420427, -1.33494)
+
+[node name="FlowerArrangement_13" parent="." instance=ExtResource("24_oftdl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.549908, 0.415118, 1.62248)
+
+[node name="cardboardBoxClosed3" parent="." instance=ExtResource("9_i48r6")]
+transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128, 1.74947, 0.41903, 1.02511)
+
+[node name="cardboardBoxClosed4" parent="." instance=ExtResource("9_i48r6")]
+transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128, 1.74947, 0.41903, 0.103294)
+
+[node name="Mud_01" parent="." instance=ExtResource("25_khoy7")]
+transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, 0.580266, 0.209436, 0.769437)
+
+[node name="Mud_02" parent="." instance=ExtResource("25_khoy7")]
+transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, -0.323314, 0.209436, -0.270239)
+
+[node name="Grass_02" parent="." instance=ExtResource("26_pm1li")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.565316, 0, 0.842035)
+
+[node name="Grass_03" parent="." instance=ExtResource("26_pm1li")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34807, 0, -0.22875)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Flower_Carnation_A_1" parent="Node" instance=ExtResource("27_v0aeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.612478, 0.213635, 0.767812)
+
+[node name="Flower_Dahlia_A_1" parent="Node" instance=ExtResource("28_wkfpt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.610766, 0.178568, 0.76645)
+
+[node name="Flower_Rose_A_1" parent="Node" instance=ExtResource("29_jyq3e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.589532, 0.245088, 0.777148)
+
+[node name="Flower_Freesia_A_2" parent="Node" instance=ExtResource("30_tjcjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.655662, 0.38938, 0.763757)
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="Flower_Carnation_A_1" parent="Node2" instance=ExtResource("27_v0aeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.318673, 0.213635, -0.284588)
+
+[node name="Flower_Dahlia_A_1" parent="Node2" instance=ExtResource("28_wkfpt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.320385, 0.178568, -0.28595)
+
+[node name="Flower_Rose_A_1" parent="Node2" instance=ExtResource("29_jyq3e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.341619, 0.245088, -0.275252)
+
+[node name="Flower_Freesia_A_2" parent="Node2" instance=ExtResource("30_tjcjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.275489, 0.38938, -0.288643)
+
+[node name="Foam_3" parent="." instance=ExtResource("31_oa54r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0744272, 0.437285, 1.68776)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.00814055, -0.777717, 0.628562, -0.0100714, 0.628615, 0.777652, -0.999916, -1.8628e-09, -0.01295, 2.42723, 3.11343, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.879266, 0.00744862, 0.476272, -0.47633, 0.0137495, 0.879159, 0, -0.999878, 0.0156375, 2.36295, 3.30601, 0.189727)
+light_color = Color(0.968627, 0.937255, 0.92549, 1)
+light_energy = 1.005
+light_indirect_energy = 1.324
+light_volumetric_fog_energy = 1.646
+light_angular_distance = 11.82

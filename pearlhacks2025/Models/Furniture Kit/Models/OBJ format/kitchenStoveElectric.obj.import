@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1at7swykwucj"
+path="res://.godot/imported/kitchenStoveElectric.obj-a55e3cdb872c5159a0625f55d394e95a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenStoveElectric.obj-a55e3cdb872c5159a0625f55d394e95a.mesh"]
+
+source_file="res://Models/Furniture Kit/Models/OBJ format/kitchenStoveElectric.obj"
+dest_files=["res://.godot/imported/kitchenStoveElectric.obj-a55e3cdb872c5159a0625f55d394e95a.mesh", "res://.godot/imported/kitchenStoveElectric.obj-a55e3cdb872c5159a0625f55d394e95a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

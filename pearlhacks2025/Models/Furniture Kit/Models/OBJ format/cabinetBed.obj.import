@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3epddl0hilmi"
+path="res://.godot/imported/cabinetBed.obj-53043ee1dfe2faa301f2e49eefc5021c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabinetBed.obj-53043ee1dfe2faa301f2e49eefc5021c.mesh"]
+
+source_file="res://Models/Furniture Kit/Models/OBJ format/cabinetBed.obj"
+dest_files=["res://.godot/imported/cabinetBed.obj-53043ee1dfe2faa301f2e49eefc5021c.mesh", "res://.godot/imported/cabinetBed.obj-53043ee1dfe2faa301f2e49eefc5021c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

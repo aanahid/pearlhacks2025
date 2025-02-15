@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhh7sfe0ebdy5"
+path="res://.godot/imported/kitchenBarEnd.obj-6b8fe5e586c68cbedf2d745e4b5d7bae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenBarEnd.obj-6b8fe5e586c68cbedf2d745e4b5d7bae.mesh"]
+
+source_file="res://Models/Furniture Kit/Models/OBJ format/kitchenBarEnd.obj"
+dest_files=["res://.godot/imported/kitchenBarEnd.obj-6b8fe5e586c68cbedf2d745e4b5d7bae.mesh", "res://.godot/imported/kitchenBarEnd.obj-6b8fe5e586c68cbedf2d745e4b5d7bae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

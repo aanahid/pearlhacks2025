@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://da7n0nyv8osa5"
+path="res://.godot/imported/wallWindow.obj-fa2096d401319031b6239d5efb9f48dc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallWindow.obj-fa2096d401319031b6239d5efb9f48dc.mesh"]
+
+source_file="res://Models/Furniture Kit/Models/OBJ format/wallWindow.obj"
+dest_files=["res://.godot/imported/wallWindow.obj-fa2096d401319031b6239d5efb9f48dc.mesh", "res://.godot/imported/wallWindow.obj-fa2096d401319031b6239d5efb9f48dc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
