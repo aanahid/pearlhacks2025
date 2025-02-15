@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=35 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
 [ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c6wfcixgbtcst" path="res://Models/Furniture Kit/Models/GLTF format/kitchenCabinetCornerInner.glb" id="4_218ug"]
 [ext_resource type="PackedScene" uid="uid://dpqnfas2h6fad" path="res://Models/LowPoly Farm Kit/WateringCan_01.fbx" id="5_f8pvu"]
 [ext_resource type="PackedScene" uid="uid://dw4woq2jss6jc" path="res://Models/LowPoly Farm Kit/Terrain_01.fbx" id="6_1ktkn"]
-[ext_resource type="PackedScene" uid="uid://dgp6uegah0y5u" path="res://Models/Furniture Kit/Models/GLTF format/cardboardBoxClosed.glb" id="9_i48r6"]
 [ext_resource type="PackedScene" uid="uid://cjq5leoah81km" path="res://Models/Furniture Kit/Models/GLTF format/rugRound.glb" id="10_igwif"]
 [ext_resource type="PackedScene" uid="uid://1ybbqtsk5whs" path="res://Models/Furniture Kit/Models/GLTF format/trashcan.glb" id="11_c5e16"]
 [ext_resource type="PackedScene" uid="uid://uhwoohl41oru" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/containers_1.tscn" id="11_d7j8t"]
@@ -25,10 +24,30 @@
 [ext_resource type="PackedScene" uid="uid://be4caj44mvwwl" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_3.tscn" id="24_oftdl"]
 [ext_resource type="PackedScene" uid="uid://dqulkuturmues" path="res://Scenes/FlowerPlot.tscn" id="25_13tlt"]
 [ext_resource type="PackedScene" uid="uid://3f4p4vhwmq56" path="res://Models/Furniture Kit/Models/GLTF format/rugSquare.glb" id="26_10gll"]
+[ext_resource type="Texture2D" uid="uid://bpdnrlyg8vcvc" path="res://e4b9c19068ac00f54637f15c9f58efdd-multiple-seeds.webp" id="26_bm42m"]
 [ext_resource type="PackedScene" uid="uid://dej1l1qitghyw" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/container/foam_3.tscn" id="31_oa54r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
 size = Vector3(3.709, 1, 0.492)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nop8k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdqk1"]
+albedo_color = Color(0.811765, 0.360784, 0.792157, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ti0b2"]
+albedo_texture = ExtResource("26_bm42m")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g5t1q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d42dm"]
+albedo_color = Color(0.917647, 0.537255, 0.196078, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yl6lt"]
+albedo_color = Color(0.905882, 0.290196, 0.317647, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ky2ii"]
+albedo_color = Color(0.941176, 0.690196, 0.2, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -197,12 +216,6 @@ transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1.63465, 0.566996, -0.5
 [node name="Terrain_01" parent="." instance=ExtResource("6_1ktkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77992, 0, 1.14587)
 
-[node name="cardboardBoxClosed" parent="." instance=ExtResource("9_i48r6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.702293, 0.441398, 1.79991)
-
-[node name="cardboardBoxClosed2" parent="." instance=ExtResource("9_i48r6")]
-transform = Transform3D(0.993056, 0, 0.117641, 0, 1, 0, -0.117641, 0, 0.993056, 1.11741, 0.41903, 1.83211)
-
 [node name="rugRound" parent="." instance=ExtResource("10_igwif")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05129, 0.0538539, 1.44579)
 
@@ -248,12 +261,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17844, 0.420427, -1.33494)
 [node name="FlowerArrangement_13" parent="." instance=ExtResource("24_oftdl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.549908, 0.415118, 1.62248)
 
-[node name="cardboardBoxClosed3" parent="." instance=ExtResource("9_i48r6")]
-transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128, 1.74947, 0.41903, 1.02511)
-
-[node name="cardboardBoxClosed4" parent="." instance=ExtResource("9_i48r6")]
-transform = Transform3D(-0.112128, 0, 0.993694, 0, 1, 0, -0.993694, 0, -0.112128, 1.74947, 0.41903, 0.103294)
-
 [node name="Foam_3" parent="." instance=ExtResource("31_oa54r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0744272, 0.437285, 1.68776)
 
@@ -273,3 +280,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.332864, 0, 0.241643)
 
 [node name="rugSquare" parent="." instance=ExtResource("26_10gll")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.411131, 0.421938, -1.08466)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.223399, 0, 0.0220081, 0, 0.25, 0, -0.0224715, 0, 0.218792, 1.62415, 0.488693, 0.0123375)
+mesh = SubResource("BoxMesh_nop8k")
+surface_material_override/0 = SubResource("StandardMaterial3D_cdqk1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(0.4, 0, 2.48353e-09, 0, 0.4, 0, -2.48353e-09, 0, 0.4, 0, 0.508379, 0)
+material_override = SubResource("StandardMaterial3D_ti0b2")
+mesh = SubResource("PlaneMesh_g5t1q")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.223399, 0, 0.0220081, 0, 0.25, 0, -0.0224715, 0, 0.218792, 1.62415, 0.488693, 0.676843)
+mesh = SubResource("BoxMesh_nop8k")
+surface_material_override/0 = SubResource("StandardMaterial3D_d42dm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D2"]
+transform = Transform3D(0.4, 0, 2.48353e-09, 0, 0.4, 0, -2.48353e-09, 0, 0.4, 0, 0.508379, 0)
+material_override = SubResource("StandardMaterial3D_ti0b2")
+mesh = SubResource("PlaneMesh_g5t1q")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.223399, 0, 0.0220081, 0, 0.25, 0, -0.0224715, 0, 0.218792, 1.13994, 0.488693, 1.77659)
+mesh = SubResource("BoxMesh_nop8k")
+surface_material_override/0 = SubResource("StandardMaterial3D_yl6lt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D3"]
+transform = Transform3D(0.4, 0, 2.48353e-09, 0, 0.4, 0, -2.48353e-09, 0, 0.4, 0, 0.508379, 0)
+material_override = SubResource("StandardMaterial3D_ti0b2")
+mesh = SubResource("PlaneMesh_g5t1q")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.223399, 0, 0.0220081, 0, 0.25, 0, -0.0224715, 0, 0.218792, 0.595052, 0.488693, 1.7723)
+mesh = SubResource("BoxMesh_nop8k")
+surface_material_override/0 = SubResource("StandardMaterial3D_ky2ii")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D4"]
+transform = Transform3D(0.4, 0, 2.48353e-09, 0, 0.4, 0, -2.48353e-09, 0, 0.4, 0, 0.508379, 0)
+material_override = SubResource("StandardMaterial3D_ti0b2")
+mesh = SubResource("PlaneMesh_g5t1q")

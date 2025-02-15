@@ -1,7 +1,7 @@
 [gd_scene load_steps=41 format=4 uid="uid://cixifn41vuokr"]
 
 [ext_resource type="Texture2D" uid="uid://cen6ge3qxuwr" path="res://Models/Mini Characters Kit/Models/GLB format/Textures/colormap.png" id="1_8e5on"]
-[ext_resource type="Script" path="res://Scenes/Scripts/character.gd" id="1_sdbi4"]
+[ext_resource type="Script" path="res://Scripts/character.gd" id="1_sdbi4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pivq"]
 resource_name = "colormap"
