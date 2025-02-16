@@ -37,6 +37,11 @@ func _process(delta):
 				Globals.order.erase(i)
 				if Globals.order == []:
 					Globals.score += 60
+					var box = $"../../CanvasLayer/OrdersContainer"
+					if box.get_child_count() > 0:
+						var first_child = box.get_child(0)
+						box.remove_child(first_child)
+						first_child.queue_free()
 				break
 		if !found: 
 			Globals.order = []

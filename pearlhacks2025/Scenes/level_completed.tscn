@@ -35,6 +35,5 @@ offset_right = 648.0
 offset_bottom = 382.0
 theme_override_colors/font_color = Color(0.964706, 0.898039, 0.670588, 1)
 theme_override_font_sizes/font_size = 72
-text = "100"
 
 [connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]
