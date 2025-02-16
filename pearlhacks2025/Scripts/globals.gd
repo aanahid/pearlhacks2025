@@ -1,6 +1,9 @@
 extends Node
 
 var item: String = ""
+var level: int = 1
+var placed: String = ""
+var order: Array = []
 
 @onready var seed_ui = null  # Store reference to UI
 

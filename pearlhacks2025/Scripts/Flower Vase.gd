@@ -19,10 +19,30 @@ func _process(delta):
 		print("put flower")
 		if Globals.item == "carnation":
 			$"../Containers_3/Flower_Carnation_A_1".visible = true
+			Globals.placed = "carnation"
 		if Globals.item == "dahlia":
 			$"../Containers_3/Flower_Dahlia_A_1".visible = true
+			Globals.placed = "dahlia"
 		if Globals.item == "rose":
 			$"../Containers_3/Flower_Rose_A_1".visible = true
+			Globals.placed = "rose"
 		if Globals.item == "freesia":
 			$"../Containers_3/Flower_Freesia_A_2".visible = true
+			Globals.placed = "freesia"
+		
+		var found = false
+		for i in Globals.order: 
+			if Globals.placed == i: 
+				Globals.order.erase(i)
+				break
+		if !found: 
+			Globals.order = []
+			var box = $"../../CanvasLayer/OrdersContainer"
+			if box.get_child_count() > 0:
+				var first_child = box.get_child(0)
+				box.remove_child(first_child)
+				first_child.queue_free()
+				
+				
+		
 		Globals.hide_item()

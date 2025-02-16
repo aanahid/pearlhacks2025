@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dqulkuturmues"]
 
 [ext_resource type="PackedScene" uid="uid://begonuxdihrr6" path="res://Models/LowPoly Farm Kit/Box_01.fbx" id="1_uh1wv"]
-[ext_resource type="Script" path="res://Scenes/flowerplot.gd" id="2_bhely"]
+[ext_resource type="Script" path="res://Scripts/flowerplot.gd" id="2_bhely"]
 [ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="2_n37x4"]
 [ext_resource type="PackedScene" uid="uid://csdf5rgmg1erp" path="res://Models/LowPoly Farm Kit/Mud_01.fbx" id="2_n567n"]
 [ext_resource type="PackedScene" uid="uid://dt5t5flgf3ncd" path="res://Models/LowPoly Farm Kit/Grass_02.fbx" id="3_040li"]

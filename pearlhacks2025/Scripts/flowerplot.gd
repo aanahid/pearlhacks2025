@@ -30,7 +30,7 @@ func _process(delta):
 		print("flowerpot pickup")
 		if Globals.item != "":
 			if Globals.item == "watering_can" and planted_seed != "" and !flower_ready:
-				timer.wait_time = 10
+				timer.wait_time = 5
 				timer.start()
 				timer_started = true
 			else:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=55 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
 [ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dy4y3h4qkq3ko" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_5.tscn" id="18_a4fnf"]
 [ext_resource type="PackedScene" uid="uid://bve22cjnprlrx" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_6.tscn" id="19_hx0w2"]
 [ext_resource type="PackedScene" uid="uid://tp0rtjuuc2is" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_7.tscn" id="20_g4aj4"]
+[ext_resource type="Script" path="res://Scripts/orders_container.gd" id="20_ub3cu"]
 [ext_resource type="PackedScene" uid="uid://pe0l0gximxdk" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_9.tscn" id="21_g7r2o"]
 [ext_resource type="PackedScene" uid="uid://dw60vsfetlhw4" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_10.tscn" id="22_6423d"]
 [ext_resource type="PackedScene" uid="uid://c432iwc30ngce" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Arrangements/flower_arrangement_8.tscn" id="23_acrl5"]
@@ -36,8 +37,8 @@
 [ext_resource type="Script" path="res://Scripts/dahlia_seed_box.gd" id="32_q8jq0"]
 [ext_resource type="Script" path="res://Scripts/freesia_seed_box.gd" id="33_fefsb"]
 [ext_resource type="Script" path="res://Scripts/rose_seed_box.gd" id="34_oaxpu"]
-[ext_resource type="Script" path="res://Scenes/WateringCan.gd" id="35_bovkx"]
-[ext_resource type="Script" path="res://Scenes/Flower Vase.gd" id="38_ng574"]
+[ext_resource type="Script" path="res://Scripts/WateringCan.gd" id="35_bovkx"]
+[ext_resource type="Script" path="res://Scripts/Flower Vase.gd" id="38_ng574"]
 [ext_resource type="PackedScene" uid="uid://dsxnrucnbgflv" path="res://Models/Furniture Kit/Models/GLTF format/wallHalf.glb" id="39_al313"]
 [ext_resource type="PackedScene" uid="uid://vpags8ujx1bm" path="res://Models/Furniture Kit/Models/GLTF format/wallWindowSlide.glb" id="40_een12"]
 [ext_resource type="PackedScene" uid="uid://xvcjrkxoroar" path="res://Models/Furniture Kit/Models/GLTF format/wall.glb" id="41_davss"]
@@ -249,16 +250,11 @@ transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.411131, 0.421938, -3.
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
 
-[node name="placeholder ordder" type="ColorRect" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(3.64, 2.48)
-
-[node name="placeholder ordder2" type="ColorRect" parent="CanvasLayer"]
-offset_left = 180.0
-offset_right = 220.0
-offset_bottom = 40.0
-scale = Vector2(3.64, 2.48)
+[node name="OrdersContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 1148.0
+offset_bottom = 98.0
+theme_override_constants/separation = 5
+script = ExtResource("20_ub3cu")
 
 [node name="dahlia" type="TextureRect" parent="CanvasLayer"]
 visible = false
@@ -470,6 +466,8 @@ scale = Vector2(0.44, 0.44)
 texture = ExtResource("30_mg6v2")
 expand_mode = 1
 stretch_mode = 4
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
 
 [node name="Carnation" type="Node" parent="."]
 
@@ -797,6 +795,7 @@ parameters/looping = false
 [node name="Player2" parent="." instance=ExtResource("43_xfues")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66315, 0, -1.65794)
 
+[connection signal="timeout" from="CanvasLayer/Timer" to="CanvasLayer/OrdersContainer" method="_on_timer_timeout"]
 [connection signal="body_entered" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_entered"]
 [connection signal="body_exited" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_exited"]
 [connection signal="body_entered" from="Dahlia/DahliaSeedBox" to="Dahlia/DahliaSeedBox" method="_on_body_entered"]
