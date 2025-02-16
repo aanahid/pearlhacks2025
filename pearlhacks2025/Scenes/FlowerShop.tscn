@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=54 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
 [ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
@@ -41,6 +41,8 @@
 [ext_resource type="PackedScene" uid="uid://dsxnrucnbgflv" path="res://Models/Furniture Kit/Models/GLTF format/wallHalf.glb" id="39_al313"]
 [ext_resource type="PackedScene" uid="uid://vpags8ujx1bm" path="res://Models/Furniture Kit/Models/GLTF format/wallWindowSlide.glb" id="40_een12"]
 [ext_resource type="PackedScene" uid="uid://xvcjrkxoroar" path="res://Models/Furniture Kit/Models/GLTF format/wall.glb" id="41_davss"]
+[ext_resource type="AudioStream" uid="uid://bueled52l20o8" path="res://Assets/bgmusic.mp3" id="42_fx3qc"]
+[ext_resource type="PackedScene" uid="uid://blcch285uaqev" path="res://Scenes/player2.tscn" id="43_xfues"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
 size = Vector3(3.709, 1, 0.492)
@@ -785,6 +787,15 @@ transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.62
 
 [node name="FlowerPlot4" parent="." instance=ExtResource("25_13tlt")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.149505, 0, -1.6)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42_fx3qc")
+volume_db = 0.5
+autoplay = true
+parameters/looping = false
+
+[node name="Player2" parent="." instance=ExtResource("43_xfues")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66315, 0, -1.65794)
 
 [connection signal="body_entered" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_entered"]
 [connection signal="body_exited" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_exited"]
