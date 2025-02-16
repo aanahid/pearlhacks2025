@@ -20,6 +20,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Exit" type="Button" parent="menu"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 254.0
 offset_top = 501.0
@@ -27,6 +28,7 @@ offset_right = 529.0
 offset_bottom = 581.0
 
 [node name="TryAgain" type="Button" parent="menu"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 628.0
 offset_top = 501.0

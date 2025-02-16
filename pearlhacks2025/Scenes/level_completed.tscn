@@ -21,6 +21,7 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="Button" type="Button" parent="TextureRect"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 439.0
 offset_top = 499.0
