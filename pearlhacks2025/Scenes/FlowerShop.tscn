@@ -249,14 +249,12 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="E4b9c19068Ac00f54637f15c9f58Efdd-multiple-seeds" type="Sprite2D" parent="CanvasLayer/dahlia"]
-visible = false
 z_index = -2
 position = Vector2(104.545, -100)
 scale = Vector2(0.372869, 0.310724)
 texture = ExtResource("26_bm42m")
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/dahlia"]
-visible = false
 z_index = -1
 layout_mode = 0
 offset_left = -18.1818
@@ -267,7 +265,6 @@ scale = Vector2(6.19165, 8.1959)
 color = Color(0.463174, 0.279222, 0.125273, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer/dahlia"]
-visible = false
 layout_mode = 0
 offset_top = -90.9091
 offset_right = 213.0
