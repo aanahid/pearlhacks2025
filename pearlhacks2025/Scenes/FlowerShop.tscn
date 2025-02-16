@@ -201,7 +201,7 @@ transform = Transform3D(-0.042329, 0, 0.999104, 0, 1, 0, -0.999104, 0, -0.042329
 transform = Transform3D(0.282576, 0, 0.959245, 0, 1, 0, -0.959245, 0, 0.282576, -1.136, 0.434627, -3.92718)
 
 [node name="FlowerArrangement_8" parent="." instance=ExtResource("20_g4aj4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0754539, 1.48251, -1.53303)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25286, 0.456169, -2.3271)
 
 [node name="FlowerArrangement_10" parent="." instance=ExtResource("21_g7r2o")]
 transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411, -0.613145, 0.438545, -3.84154)
