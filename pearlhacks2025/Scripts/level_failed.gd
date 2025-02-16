@@ -7,3 +7,6 @@ func _on_exit_pressed() -> void:
 func _on_try_again_pressed() -> void:
 	Globals.reset_globals()
 	get_tree().change_scene_to_file("res://scenes/FlowerShop.tscn")
+	
+func _ready():
+	$TextureRect/Label.text = str(Globals.score)

@@ -27,6 +27,7 @@ color = Color(0.762489, 0.811626, 0.616114, 1)
 layout_mode = 0
 offset_right = 130.0
 offset_bottom = 71.0
+theme_override_constants/separation = 5
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2

@@ -36,5 +36,5 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func _on_timer_timeout() -> void:
+func _on_level_time_timeout() -> void:
 	pass # Replace with function body.

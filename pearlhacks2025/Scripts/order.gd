@@ -13,8 +13,8 @@ var flowers = [
 
 func _ready():
 	if Globals.level == 1: 
-		timer.wait_time = 40
-		progress_bar.max_value = 40
+		timer.wait_time = 35
+		progress_bar.max_value = 35
 	progress_bar.value = 0
 	await get_tree().create_timer(0.1).timeout
 	generate_order()
