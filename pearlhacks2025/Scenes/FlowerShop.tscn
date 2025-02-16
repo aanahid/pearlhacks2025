@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=52 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
 [ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
@@ -38,6 +38,9 @@
 [ext_resource type="Script" path="res://Scripts/rose_seed_box.gd" id="34_oaxpu"]
 [ext_resource type="Script" path="res://Scenes/WateringCan.gd" id="35_bovkx"]
 [ext_resource type="Script" path="res://Scenes/Flower Vase.gd" id="38_ng574"]
+[ext_resource type="PackedScene" uid="uid://dsxnrucnbgflv" path="res://Models/Furniture Kit/Models/GLTF format/wallHalf.glb" id="39_al313"]
+[ext_resource type="PackedScene" uid="uid://vpags8ujx1bm" path="res://Models/Furniture Kit/Models/GLTF format/wallWindowSlide.glb" id="40_een12"]
+[ext_resource type="PackedScene" uid="uid://xvcjrkxoroar" path="res://Models/Furniture Kit/Models/GLTF format/wall.glb" id="41_davss"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
 size = Vector3(3.709, 1, 0.492)
@@ -152,7 +155,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.4543
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428736, -2.38419e-07, 1.19209e-07)
 
 [node name="kitchenCabinet" parent="counterRow4" instance=ExtResource("2_0jwsh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857799, 0, -0.000107884)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857693, 0, -0.000107884)
 
 [node name="kitchenCabinetDrawer" parent="counterRow4" instance=ExtResource("3_adc3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
@@ -161,7 +164,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28823, 0, -0.00134134)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71502, 0, -0.000215828)
 
 [node name="kitchenCabinetDrawer3" parent="counterRow4" instance=ExtResource("3_adc3s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14546, 0, -0.00144923)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14193, 0, -0.00144911)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="counterRow4"]
 
@@ -185,13 +188,14 @@ transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -1.1107,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.759088, -0.00890136, 1.16281)
 
 [node name="rugRound" parent="." instance=ExtResource("10_igwif")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105648, 0.0538539, -3.00282)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105648, 0.0538539, -2.70331)
 
 [node name="trashcan" parent="." instance=ExtResource("11_c5e16")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.840416, 0, 1.34335)
+visible = false
 
 [node name="FlowerArrangement_1" parent="." instance=ExtResource("13_agwy6")]
-transform = Transform3D(-0.992099, 0, 0.125454, 0, 1, 0, -0.125454, 0, -0.992099, -0.35064, 0.411617, 1.8023)
+transform = Transform3D(-0.422619, 0, 0.906307, 0, 1, 0, -0.906307, 0, -0.422619, -1.36503, 0.411617, -3.04795)
 
 [node name="kitchenSink" parent="." instance=ExtResource("16_v8ljy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263094, 0.00357264, -3.61674)
@@ -200,13 +204,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263094, 0.00357264, -3.616
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69414, 0.431208, -3.78666)
 
 [node name="FlowerArrangement_6" parent="." instance=ExtResource("18_a4fnf")]
-transform = Transform3D(-0.042329, 0, 0.999104, 0, 1, 0, -0.999104, 0, -0.042329, -1.31059, 0.436749, 1.35118)
+transform = Transform3D(-0.042329, 0, 0.999104, 0, 1, 0, -0.999104, 0, -0.042329, -1.31059, 0.436749, 0.945882)
 
 [node name="FlowerArrangement_7" parent="." instance=ExtResource("19_hx0w2")]
 transform = Transform3D(0.282576, 0, 0.959245, 0, 1, 0, -0.959245, 0, 0.282576, -1.136, 0.434627, -3.92718)
 
 [node name="FlowerArrangement_8" parent="." instance=ExtResource("20_g4aj4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25286, 0.456169, -2.3271)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.37931, 0.456169, -1.67824)
 
 [node name="FlowerArrangement_10" parent="." instance=ExtResource("21_g7r2o")]
 transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411, -0.613145, 0.438545, -3.84154)
@@ -215,13 +219,13 @@ transform = Transform3D(-0.402411, 0, 0.915459, 0, 1, 0, -0.915459, 0, -0.402411
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.72745, 0.447298, -2.80512)
 
 [node name="FlowerArrangement_12" parent="." instance=ExtResource("23_acrl5")]
-transform = Transform3D(0.0221813, 0, 0.999754, 0, 1, 0, -0.999754, 0, 0.0221813, -1.34846, 0.420427, -0.358719)
+transform = Transform3D(0.0221813, 0, 0.999754, 0, 1, 0, -0.999754, 0, 0.0221813, -1.34846, 0.420427, -0.451154)
 
 [node name="FlowerArrangement_13" parent="." instance=ExtResource("24_oftdl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.549908, 0.415118, 1.62248)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.00621353, -0.877372, 0.47977, -0.0113619, 0.47981, 0.877299, -0.999916, 9.77979e-09, -0.01295, 2.26995, 3.23938, -1.17755)
+transform = Transform3D(-0.000859278, -0.80377, 0.59494, -0.010291, 0.594916, 0.803722, -0.999947, -0.0054319, -0.00878279, 1.9996, 3.29442, -1.11813)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.95013, 0.00487661, 0.311816, -0.311854, 0.0148576, 0.950014, -8.53058e-10, -0.999878, 0.0156375, 2.17235, 3.41741, -0.987828)
@@ -232,16 +236,27 @@ light_volumetric_fog_energy = 1.646
 light_angular_distance = 11.82
 
 [node name="FlowerPlot" parent="." instance=ExtResource("25_13tlt")]
-transform = Transform3D(-0.00766191, 0, 0.999971, 0, 1, 0, -0.999971, 0, -0.00766191, -0.108872, 0, 0.464058)
+transform = Transform3D(-0.00766191, 0, 0.999971, 0, 1, 0, -0.999971, 0, -0.00766191, -0.149505, 0, 0.507762)
 
 [node name="FlowerPlot2" parent="." instance=ExtResource("25_13tlt")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0906417, 0, -0.989383)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.151505, 0, -0.292238)
 
 [node name="rugSquare" parent="." instance=ExtResource("26_10gll")]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.411131, 0.421938, -3.66817)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
+
+[node name="placeholder ordder" type="ColorRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3.64, 2.48)
+
+[node name="placeholder ordder2" type="ColorRect" parent="CanvasLayer"]
+offset_left = 180.0
+offset_right = 220.0
+offset_bottom = 40.0
+scale = Vector2(3.64, 2.48)
 
 [node name="dahlia" type="TextureRect" parent="CanvasLayer"]
 visible = false
@@ -597,7 +612,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05386, 0.264221, -0.211008)
 shape = SubResource("BoxShape3D_g6tx1")
 
 [node name="FlowerPlot3" parent="." instance=ExtResource("25_13tlt")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.182487, 0, -2.42596)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.147505, 0, -2.4)
 
 [node name="Node" type="Node" parent="."]
 
@@ -703,6 +718,73 @@ script = ExtResource("38_ng574")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Flower Vase/Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0198975, 0, 0.158264)
 shape = SubResource("BoxShape3D_kh7pd")
+
+[node name="wallHalf" parent="." instance=ExtResource("39_al313")]
+transform = Transform3D(-5.28471e-07, 0, 1, 0, 1, 0, -12.09, 0, -4.37114e-08, 1.95666, -0.581663, 1.97668)
+
+[node name="wallWindowSlide" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02975, 0.201729, 2.02757)
+
+[node name="wallWindowSlide2" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.369268, 0.201729, 2.02757)
+
+[node name="wall" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.68, 0, 0, 0, 1, 0, 0, 0, 1, 1.25142, 0.201729, 2.02757)
+
+[node name="wall2" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.68, 0, 0, 0, 1, 0, 0, 0, 1, -0.183667, 0.201729, 2.02757)
+
+[node name="wall3" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.68, 0, 0, 0, 1, 0, 0, 0, 1, -1.60645, 0.201729, 2.02757)
+
+[node name="wallWindowSlide3" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(-0.999999, 0, 0.001501, 0, 1, 0, -0.001501, 0, -0.999999, 1.34857, 0.201729, -4.13303)
+
+[node name="wallWindowSlide4" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(-0.999999, 0, 0.001501, 0, 1, 0, -0.001501, 0, -0.999999, -0.050455, 0.201729, -4.13513)
+
+[node name="wall4" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(-0.679999, 0, 0.001501, 0, 1, 0, -0.00102068, 0, -0.999999, -0.932609, 0.201729, -4.13646)
+
+[node name="wall5" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(-0.679999, 0, 0.001501, 0, 1, 0, -0.00102068, 0, -0.999999, 0.50248, 0.201729, -4.1343)
+
+[node name="wall6" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(-0.679999, 0, 0.001501, 0, 1, 0, -0.00102068, 0, -0.999999, 1.92526, 0.201729, -4.13217)
+
+[node name="wallWindowSlide5" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(0.000628283, 0, -1, 0, 1, 0, 1, 0, 0.000628283, -1.62283, 0.201729, -0.945601)
+
+[node name="wallWindowSlide6" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(0.000628283, 0, -1, 0, 1, 0, 1, 0, 0.000628283, -1.62195, 0.201729, 0.453421)
+
+[node name="wall7" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.6214, 0.201729, 1.33558)
+
+[node name="wall8" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.6223, 0.201729, -0.0995142)
+
+[node name="wall9" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.62319, 0.201729, -1.39218)
+
+[node name="wallWindowSlide7" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(0.000628283, 0, -1, 0, 1, 0, 1, 0, 0.000628283, -1.62283, 0.201729, -3.55981)
+
+[node name="wallWindowSlide8" parent="." instance=ExtResource("40_een12")]
+transform = Transform3D(0.000628283, 0, -1, 0, 1, 0, 1, 0, 0.000628283, -1.62195, 0.201729, -2.16079)
+
+[node name="wall10" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.6214, 0.201729, -1.27863)
+visible = false
+
+[node name="wall11" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.6223, 0.201729, -2.71372)
+
+[node name="wall12" parent="." instance=ExtResource("41_davss")]
+transform = Transform3D(0.000427233, 0, -1, 0, 1, 0, 0.68, 0, 0.000628283, -1.62319, 0.201729, -4.13651)
+
+[node name="FlowerPlot4" parent="." instance=ExtResource("25_13tlt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.149505, 0, -1.6)
 
 [connection signal="body_entered" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_entered"]
 [connection signal="body_exited" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_exited"]
