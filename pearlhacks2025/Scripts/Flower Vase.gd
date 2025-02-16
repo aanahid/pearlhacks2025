@@ -42,6 +42,10 @@ func _process(delta):
 						var first_child = box.get_child(0)
 						box.remove_child(first_child)
 						first_child.queue_free()
+						$"../Containers_3/Flower_Carnation_A_1".visible = false
+						$"../Containers_3/Flower_Dahlia_A_1".visible = false
+						$"../Containers_3/Flower_Rose_A_1".visible = false
+						$"../Containers_3/Flower_Freesia_A_2".visible = false
 				break
 		if !found: 
 			Globals.order = []
@@ -58,6 +62,10 @@ func _process(delta):
 				var first_child = box.get_child(0)
 				box.remove_child(first_child)
 				first_child.queue_free()
+			$"../Containers_3/Flower_Carnation_A_1".visible = false
+			$"../Containers_3/Flower_Dahlia_A_1".visible = false
+			$"../Containers_3/Flower_Rose_A_1".visible = false
+			$"../Containers_3/Flower_Freesia_A_2".visible = false
 				
 		$"../../CanvasLayer/Score".text = str(Globals.score)
 		
