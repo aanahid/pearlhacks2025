@@ -4,6 +4,8 @@ var item: String = ""
 var level: int = 1
 var placed: String = ""
 var order: Array = []
+var mistakes: int = 0
+var score: int = 0
 
 @onready var seed_ui = null  # Store reference to UI
 
@@ -52,3 +54,10 @@ func pick_up(item1: String):
 	if item == "freesia":
 		seed_ui = canvas_layer.find_child("freesia2", true, false)
 		seed_ui.visible = true
+
+func reset_stats(): 
+	item = ""
+	placed = ""
+	order = []
+	mistakes = 0
+	score = 0

@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg5gwp3my013d"]
+
+[ext_resource type="Script" path="res://Scripts/level_failed.gd" id="1_i04ko"]
+[ext_resource type="Texture2D" uid="uid://xrv4iufxjfkq" path="res://Assets/levelfailed.png" id="2_03opa"]
+
+[node name="LevelFailed" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i04ko")
+
+[node name="menu" type="TextureRect" parent="."]
+offset_right = 1233.0
+offset_bottom = 648.0
+texture = ExtResource("2_03opa")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Exit" type="Button" parent="menu"]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 501.0
+offset_right = 529.0
+offset_bottom = 581.0
+
+[node name="TryAgain" type="Button" parent="menu"]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 501.0
+offset_right = 903.0
+offset_bottom = 581.0
+
+[connection signal="pressed" from="menu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="menu/TryAgain" to="." method="_on_try_again_pressed"]
