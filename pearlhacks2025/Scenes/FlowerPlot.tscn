@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dqulkuturmues"]
+[gd_scene load_steps=11 format=3 uid="uid://dqulkuturmues"]
 
 [ext_resource type="PackedScene" uid="uid://begonuxdihrr6" path="res://Models/LowPoly Farm Kit/Box_01.fbx" id="1_uh1wv"]
+[ext_resource type="Script" path="res://Scenes/flowerplot.gd" id="2_bhely"]
 [ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="2_n37x4"]
 [ext_resource type="PackedScene" uid="uid://csdf5rgmg1erp" path="res://Models/LowPoly Farm Kit/Mud_01.fbx" id="2_n567n"]
 [ext_resource type="PackedScene" uid="uid://dt5t5flgf3ncd" path="res://Models/LowPoly Farm Kit/Grass_02.fbx" id="3_040li"]
@@ -10,6 +11,9 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0ustc"]
 size = Vector3(0.557632, 0.750977, 0.391724)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4h5vr"]
+size = Vector3(0.68338, 1, 0.563965)
 
 [node name="FlowerPlot" type="Node3D"]
 
@@ -21,19 +25,42 @@ size = Vector3(0.557632, 0.750977, 0.391724)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00626373, 0.124512, -0.013184)
 shape = SubResource("BoxShape3D_0ustc")
 
+[node name="Area3D" type="Area3D" parent="Box_01/StaticBody3D"]
+script = ExtResource("2_bhely")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box_01/StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0085907, 0, -0.0136719)
+shape = SubResource("BoxShape3D_4h5vr")
+
 [node name="Mud_02" parent="." instance=ExtResource("2_n567n")]
 transform = Transform3D(0.153462, 0, 0, 0, 0.1, 0, 0, 0, 0.111214, 0, 0.209527, 0)
 
 [node name="Grass_02" parent="." instance=ExtResource("3_040li")]
+visible = false
 
 [node name="Flower_Carnation_A_1" parent="." instance=ExtResource("2_n37x4")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+visible = false
 
 [node name="Flower_Dahlia_A_1" parent="." instance=ExtResource("3_k00qt")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+visible = false
 
 [node name="Flower_Rose_A_1" parent="." instance=ExtResource("4_tas46")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+visible = false
 
 [node name="Flower_Freesia_A_2" parent="." instance=ExtResource("5_vr6g1")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.2264, 0)
+visible = false
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0784417, 0.996919, 0, -0.996919, 0.0784417, 0, 0.911376, 0)
+visible = false
+text = "seconds"
+
+[connection signal="body_entered" from="Box_01/StaticBody3D/Area3D" to="Box_01/StaticBody3D/Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Box_01/StaticBody3D/Area3D" to="Box_01/StaticBody3D/Area3D" method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="Box_01/StaticBody3D/Area3D" method="_on_timer_timeout"]
