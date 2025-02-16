@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://j2ge02w5rb82"]
+[gd_scene load_steps=49 format=3 uid="uid://j2ge02w5rb82"]
 
 [ext_resource type="PackedScene" uid="uid://cmajp5r5lol5a" path="res://Models/Furniture Kit/Models/GLTF format/floorFull.glb" id="1_g4bxs"]
 [ext_resource type="PackedScene" uid="uid://cixifn41vuokr" path="res://Scenes/player.tscn" id="1_ul03u"]
@@ -24,15 +24,20 @@
 [ext_resource type="PackedScene" uid="uid://3f4p4vhwmq56" path="res://Models/Furniture Kit/Models/GLTF format/rugSquare.glb" id="26_10gll"]
 [ext_resource type="Texture2D" uid="uid://bpdnrlyg8vcvc" path="res://e4b9c19068ac00f54637f15c9f58efdd-multiple-seeds.webp" id="26_bm42m"]
 [ext_resource type="Texture2D" uid="uid://djcgd6gsit13u" path="res://Assets/dahlia.png" id="27_stv56"]
+[ext_resource type="PackedScene" uid="uid://b8gegseq6hqa5" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_carnation_a_1.tscn" id="27_v0aeh"]
 [ext_resource type="Texture2D" uid="uid://j44kwo1hqg2r" path="res://Assets/freesia.png" id="28_d3oab"]
+[ext_resource type="PackedScene" uid="uid://beg4q7hraxxcj" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_dahlia_a_1.tscn" id="28_wkfpt"]
 [ext_resource type="Texture2D" uid="uid://b8i1ayo25kusc" path="res://Assets/carnation.png" id="29_irpj5"]
+[ext_resource type="PackedScene" uid="uid://b0y717fmpv81t" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_rose_a_1.tscn" id="29_jyq3e"]
 [ext_resource type="Texture2D" uid="uid://c1tyj4wjja458" path="res://Assets/watering-can.png" id="30_i6adg"]
 [ext_resource type="Texture2D" uid="uid://dt8k1rhrwewvn" path="res://Assets/rose.png" id="30_mg6v2"]
+[ext_resource type="PackedScene" uid="uid://cnb8fykjx6lbc" path="res://Models/Flower Arrangement Kit/FlowerArrangementPack/Scenes/Flower/flower_freesia_a_2.tscn" id="30_tjcjq"]
 [ext_resource type="Script" path="res://Scripts/carnation_seed_box.gd" id="31_nikom"]
 [ext_resource type="Script" path="res://Scripts/dahlia_seed_box.gd" id="32_q8jq0"]
 [ext_resource type="Script" path="res://Scripts/freesia_seed_box.gd" id="33_fefsb"]
 [ext_resource type="Script" path="res://Scripts/rose_seed_box.gd" id="34_oaxpu"]
 [ext_resource type="Script" path="res://Scenes/WateringCan.gd" id="35_bovkx"]
+[ext_resource type="Script" path="res://Scenes/Flower Vase.gd" id="38_ng574"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g6tx1"]
 size = Vector3(3.709, 1, 0.492)
@@ -58,6 +63,9 @@ albedo_color = Color(0.941176, 0.690196, 0.2, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yl6lt"]
 albedo_color = Color(0.905882, 0.290196, 0.317647, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kh7pd"]
+size = Vector3(0.293213, 1, 1.31653)
 
 [node name="Node3D" type="Node3D"]
 
@@ -185,9 +193,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.840416, 0, 1.34335)
 [node name="FlowerArrangement_1" parent="." instance=ExtResource("13_agwy6")]
 transform = Transform3D(-0.992099, 0, 0.125454, 0, 1, 0, -0.125454, 0, -0.992099, -0.35064, 0.411617, 1.8023)
 
-[node name="Containers_3" parent="." instance=ExtResource("15_cm8w8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592979, 0.531281, -3.85029)
-
 [node name="kitchenSink" parent="." instance=ExtResource("16_v8ljy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.263094, 0.00357264, -3.61674)
 
@@ -236,6 +241,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.090
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.411131, 0.421938, -3.66817)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
 
 [node name="dahlia" type="TextureRect" parent="CanvasLayer"]
 visible = false
@@ -666,6 +672,38 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.998804, 0, 1)
 [node name="floorFull16" parent="Node/floorFull17/floorFull16/floorFull16" instance=ExtResource("1_g4bxs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.998804, 0, 0)
 
+[node name="Flower Vase" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.594509, 0.503525, -3.90928)
+
+[node name="Containers_3" parent="Flower Vase" instance=ExtResource("15_cm8w8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0478928)
+mass = 0.001
+gravity_scale = 0.0
+freeze = true
+
+[node name="Flower_Carnation_A_1" parent="Flower Vase/Containers_3" instance=ExtResource("27_v0aeh")]
+transform = Transform3D(0.852902, 0.105588, 0.837501, -0.269223, 1.16243, 0.12762, -0.800048, -0.278602, 0.849885, 0.0201589, 0.018479, -0.00408292)
+visible = false
+
+[node name="Flower_Dahlia_A_1" parent="Flower Vase/Containers_3" instance=ExtResource("28_wkfpt")]
+transform = Transform3D(1.19622, -0.0951948, 0, 0.0951948, 1.19622, 0, 0, 0, 1.2, -0.0162549, -0.067679, 0)
+visible = false
+
+[node name="Flower_Rose_A_1" parent="Flower Vase/Containers_3" instance=ExtResource("29_jyq3e")]
+transform = Transform3D(1.15089, 0.333664, 0.0642535, -0.339794, 1.13012, 0.217627, -6.20711e-09, -0.226914, 1.17835, -0.0229524, -0.0282776, 0.0429094)
+visible = false
+
+[node name="Flower_Freesia_A_2" parent="Flower Vase/Containers_3" instance=ExtResource("30_tjcjq")]
+transform = Transform3D(-0.465192, 0, 1.10616, 0.156529, 1.18792, 0.0658275, -1.09503, 0.169807, -0.460511, 0, 0.0385848, 0)
+visible = false
+
+[node name="Area3D" type="Area3D" parent="Flower Vase"]
+script = ExtResource("38_ng574")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Flower Vase/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0198975, 0, 0.158264)
+shape = SubResource("BoxShape3D_kh7pd")
+
 [connection signal="body_entered" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_entered"]
 [connection signal="body_exited" from="Carnation/CarnationSeedBox" to="Carnation/CarnationSeedBox" method="_on_body_exited"]
 [connection signal="body_entered" from="Dahlia/DahliaSeedBox" to="Dahlia/DahliaSeedBox" method="_on_body_entered"]
@@ -676,3 +714,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.998804, 0, 0)
 [connection signal="body_exited" from="Rose/RoseSeedBox" to="Rose/RoseSeedBox" method="_on_body_exited"]
 [connection signal="body_entered" from="Watering Can/Area3d" to="Watering Can/Area3d" method="_on_body_entered"]
 [connection signal="body_exited" from="Watering Can/Area3d" to="Watering Can/Area3d" method="_on_body_exited"]
+[connection signal="body_entered" from="Flower Vase/Area3D" to="Flower Vase/Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Flower Vase/Area3D" to="Flower Vase/Area3D" method="_on_body_exited"]

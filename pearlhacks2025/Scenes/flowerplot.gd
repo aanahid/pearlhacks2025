@@ -57,6 +57,7 @@ func _process(delta):
 					Globals.pick_up("freesia")
 				if planted_seed == "dahlia_seed":
 					Globals.pick_up("dahlia")
+				$"../../../Grass_02".visible = false
 				flower_node.visible = false
 				planted_seed = ""
 				flower_ready = false

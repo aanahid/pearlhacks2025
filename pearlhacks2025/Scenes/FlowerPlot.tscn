@@ -57,7 +57,7 @@ visible = false
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Label3D" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.0784417, 0.996919, 0, -0.996919, 0.0784417, 0, 0.911376, 0)
+transform = Transform3D(1, 0, 0, 0, 0.0784417, 0.996919, 0, -0.996919, 0.0784417, 0, 0.594124, 0)
 visible = false
 text = "seconds"
 

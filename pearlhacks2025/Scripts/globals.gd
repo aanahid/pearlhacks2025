@@ -22,6 +22,14 @@ func hide_item():
 		seed_ui = canvas_layer.find_child("freesia", true, false)
 	if Globals.item == "watering_can":
 		seed_ui = canvas_layer.find_child("Watering Can Icon", true, false)
+	if Globals.item == "carnation":
+		seed_ui = canvas_layer.find_child("carnation2", true, false)
+	if Globals.item == "dahlia":
+		seed_ui = canvas_layer.find_child("dahlia2", true, false)
+	if Globals.item == "rose":
+		seed_ui = canvas_layer.find_child("rose2", true, false)
+	if Globals.item == "freesia":
+		seed_ui = canvas_layer.find_child("freesia2", true, false) 
 	seed_ui.visible = false
 	Globals.item = ""
 
